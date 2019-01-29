@@ -1,0 +1,10 @@
+
+{
+  "name": "hello-world",
+  "description": "my express serer",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  }
+}

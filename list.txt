@@ -1,14 +1,145 @@
 
-https://twitter.com/youyuxi
+上海
+	羡辙 雯莉
+	倪朋飞
+	Andy Zhang
+	施闻轩
+	xaoxuu
+	付业成
+	胡文伟
+	缪昌新
 
-1
+杭州
+	张秋怡
+	徐中虎
+	吴雪莲
+	Yanghui Weng
+	zhuxiujia(杰哥)
+	(codeskyblue:gohttp
+	,nondanee:netease-cloud-music)
+
+深圳
+	唐聪
+	陈迪豪
+	henry lee
+
+北京
+	李霞
+	刘丹冰
+	邓佳龙
+	潘建峰？
+
+
+henrylee2cn@gmail.com
+henrylee2cn 深圳 字节跳动后台开发工程师
+多个go开源项目作者
+
+
+
+
+mcx_221@foxmail.com
+polyrabbit 缪（miao）昌新
+字节跳动资深软件工程师 上海 浦东新区
+	https://blog.betacat.io/
+	https://www.linkedin.com/in/%E6%98%8C%E6%96%B0-%E7%BC%AA-b46b8591/
+	etcd committer？
+
+	ByteDance Software Engineer
+	2020 年 2 月 – 至今6 个月
+	At infrastructure department, developing microservices management platform.
+
+	Cisco Software Engineer III
+	2019 年 6 月 – 2019 年 12 月7 个月
+	Work on the next generation Cisco Cloud Native Broadband Router (cnBR), focuses:
+	- Service resiliency and HA in micro-service environment.
+	- Platform infrastructures such as Kubernetes, ETCD, Redis, etc.
+
+	IBM Staff Software Engineer
+	2015 年 6 月 – 2019 年 6 月4 年 1 个月
+	Develop performance tools for mainframe, including:
+	- IBM Visual Performance Analyzer (VPA)
+	- z/OS Performance Insights platform
+
+
+
+
+zhuxiujia@qq.com
+github:zhuxiujia  杭州？
+微信：zxj347284221（杰哥在学习）
+Go Android GoMybatis作者
+
+
+
+
+
+wengyanghui@gmail.com,wengyanghui@foxmail.com
+Yanghui Weng(Yang Weng) 网易 杭州
+github:AsCat    Istio, Service Mesher, 云原生社区
+
+
+
+wenweihu86@163.com
+胡文伟 百度资深研发工程师 上海 浦东新区
+wenweihu86
+JAVA,GO. microservice, highly concurrent distributed system, advertising system.
+
+
+
+
+cofyc.jackson@gmail.com
+付业成 上海 18019215368
+cofyc https://yechengfu.com/
+Kubernetes collaborator, PingCAP collaborator.Enjoy programming on *nix systems and work on Kubernetes and related projects currently.
+	VeryCD 2008.7.11 - 2013.8.21
+	Experience Web Software Developer and DevOps Engineer.
+	Write and maintain web framework in PHP and Python. Maintain basic services, like
+	nginx, haproxy, mysql, memcached and moosefs cluster etc.
+	⋄ Qiniu, 2013.10.8 - 2014.6.27
+	DevOps Engineer. Write and maintain deploy system at large scale, base on puppet
+	and salt, etc.
+	⋄ XinDong,  2014.7.7 - 2015.9.17
+	Tech leader of web department.
+	⋄ Qiniu, 2015.9.21 - Present
+	Senior Software Engineer.
+
+
+
+danbing.at@gmail.com
+刘丹冰 北京
+aceld Zinx作者（基于Golang轻量级TCP并发服务器框架）
+现就职于"传智播客C++学院"、担任"Golang与区块链部门研发经理"兼"教学讲师"职位。曾就职于“启明星辰”、“Haier U+ Smart Home” 重要研发和管理岗位。
+
+
+
+tangcong506@gmail.com
+唐聪 深圳腾讯
+tangcong
+2014 年毕业加入腾讯，SNG 增值产品部后台开发工程师，一直从事 QQ 会员后台基础系统、复杂业务系统研发，主要关注分布式系统、存储引擎、容器等技术。
+etcd contributor, codis contributor
+
+
+
+
+dalonghahaha@163.com, dalonghahaha@gmail.com
+Dengjialong Michael Deng 邓佳龙 龙翔云际 北京
+dalonghahaha
+	分布式作业管理系统 Asgard作者 10年以上开发老兵 golang js php
+	直上网 (2015 - 2016)
+	新浪微博 (2014 - 2014)
+	搜房网 (2011 - 2014)
+	职位：新房技术部高级开发工程师
+	银泰电子商务 (2010 - 2011)
+	职位：技术部软件开发工程师
+	Linksus (2009 - 2010)
+	职位：IT研发中心程序员
+
+
+
+
 email:me@zhangwenli.com
-https://weibo.com/plainjane
-twitter.com/OviliaZhang
-
-Zhang Wenli
+Zhang Wenli雯莉  羡辙
 Ovilia
-Web Front-End Designer and Programmer
+百度资深研发工程师 Web Front-End Designer and Programmer
 
 	Shanghai, China
 
@@ -18,15 +149,14 @@ Web Front-End Designer and Programmer
 	PPMC of Apache ECharts (incubator)
 
 	http://zhangwenli.com
+https://weibo.com/plainjane
+twitter.com/OviliaZhang
 
 
 
 
-2
-joyeec9h3@gmail.com
-joyee@igalia.com
-
-Joyee Cheung 张秋怡
+joyeec9h3@gmail.com,joyee@igalia.com
+张秋怡Joyee Cheung
 joyeecheung
 nodejs v8
 
@@ -46,17 +176,13 @@ nodejs v8
 	Over the past few years I have been contributing to Node.js and V8. I became a member of the Node.js Technical Steering Committee (previously Core Technical Committee) in 2017 and a V8 committer in 2019.
 
 
-3
-panjf2000@gmail.com
-837733606@qq.com
-twitter.com/_andy_pan
-https://weibo.com/Matrigram
-https://www.zhihu.com/people/andy_pan
 
+panjf2000@gmail.com, 837733606@qq.com
 Andy Pan 潘建锋 90后
 panjf2000
+
 A front-line programmer based in South China. I mostly write server-side code. Also a modern agnostic.
-	
+
 	北京？
 
 	前腾讯员工，现就职于亚马逊。
@@ -85,20 +211,20 @@ A front-line programmer based in South China. I mostly write server-side code. A
 
 	2018 年 10 月，辞去在深圳的工作，千里迢迢到北京工作，至于原因嘛，有兴趣的话可以看这里：《后会有期》。
 
+	twitter.com/_andy_pan
+	https://weibo.com/Matrigram
+	https://www.zhihu.com/people/andy_pan
 微信扫码：https://mmbiz.qpic.cn/mmbiz_jpg/dZbLsg7Jh61PZxfNPf5sJNeU2aPyqATcT3ykPSNLCeTXnTfIVhrcVmNjDbk8lj6SnbDmOdKDTnnFJnHVWZxIYg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1
 
 
 
 
-4
-
 tobeg3oogle@gmail.com
-weibo.com/tobegit3hub
-
-tobe迪豪 （Dihao Chen）
+tobe陈迪豪 （Dihao Chen）4paradigm架构师
 tobegit3hub
 
-	4paradigm 广东深圳
+	weibo.com/tobegit3hub
+	 广东深圳
 
 	Work on @XiaoMi, @unitedstack and @4paradigm for Storage(HBase, Ceph), IaaS(OpenStack, Kubernetes), Big data(Spark, Flink) and Machine Learning(TensorFlow).
 
@@ -158,30 +284,180 @@ tobegit3hub
 
 
 
-5
 
-zimu_xia@126.com
-Lynn 紫沐．夏 李霞
+
+zimu_xia@126.com, lixia@pingcap.com
+李霞 Lynn 紫沐．夏 TiDB研发工程师
 zimulala
 
 	PINGCAP
-	Beijing China 
-
+	Beijing China
+	微博：@紫沐夏_go
 	http://zimulala.github.io/
 
-	TIDB Committer GOPHER
+	15 年中旬加入 PingCAP 主要参与模块为 TiDB 的 online DDL，SQL 优化器，各种必要的功能改 进以及性能提升 之前在京东就职 ○ ○ ● 主要研究方向 为分布式系统， 坚信分布式系统才是未来 12 年末入职，学习 go 并且开始做云推送 项目 13 年末开始做存 储方面的工作，云存 储和弹性块存储项目
 
 
-6
+
+huachao.huang@gmail.com
+Huang Hua Chao黄华超 现字节跳动 前Pingcap基础架构工程师
+huachaohuang
+
+		mail:huachao.huang@gmail.com
+		huachaohuang.com
+
+		I am an experienced software engineer with a passionate interest in infrastructure software.
+
+		I have more than five years of experience in distributed storage systems. I have a solid understanding of storage engine, consensus algorithm, distributed transaction, and other database techniques.
+
+		Experience
+		ByteDance
+		2020 - Present
+
+		PingCAP
+		Tech Lead
+
+		2018 - 2019
+
+		Part of the TiKV team, managed a group of developers focused on storage engine, distributed computation and scheduling.
+
+		Responsible for technical research and development, growing the team and developing individual engineers within the team.
+
+		Infrastructure Engineer
+
+		2016 - 2017
+
+		Part of the TiKV team, led the development of PD.
+
+		PD is one of the components for TiDB. It is responsible for timestamp allocation, metadata management, and distributed scheduling.
+
+		Nice
+		Senior Software Engineer
+
+		2015 - 2016
+
+		Led the development of NDB, a persistent key-value storage system compatible with Redis protocol. I designed and implemented NDB from scratch, and was responsible for all the development and operation.
+
+		Tencent
+		Software Engineer
+
+		2013 - 2015
+
+		Part of the infrastructure team in Wechat. Invoked in the development of a NoSQL storage system, the predecessor of PaxosStore.
+
+
+
+
+zhhxu2011@163.com
+徐中虎 杭州 华为软件工程师
+hzxuzhonghu
+CloudNative software engineer, Istio Maintainer. focus on kubernetes/istio, go/c/node.js
+华为云原生开源团队核心成员，Istio社区Approver，Kubernetes项目核心贡献者，现 聚 焦 于Cloud Native、Docker、Kubernetes、Service Mesh等领域，对分布式系统性能优化、高可靠、可扩展等有深入的研究。曾就职于网易、Nokia。
+
+
+
+
+hi@breeswish.org
+施闻轩
+breeswish
+PingCAP 基础架构工程师 上海
+同济大学软件学院2017届本科校友,前软件学院谷歌俱乐部成员。曾在微软中国实习,目前在 PingCAP 担任基础架构工程师,负责分布式数据库 TiKV 功
+
+
+
+me@xaoxuu.com
+xaoxuu
+	上海 Nodejs前端开发者 IOS开发者 Hexo主题volantis作者，
+	https://xaoxuu.com
+
+
+
+
+feiskyer 倪朋飞 微软资深软件工程师 上海
+工作在云计算领域，Kubernetes项目维护者。在云计算、SDN网络和容器编排调度等领域具有多年实践经验。
+
+			微软Azure资深工程师，同时也是Kubernetes项目维护者，主要负责开源容器编排	系统Kubernetes在Azure的落地实践。他曾任职于盛大云和腾讯，一直从事云计算领域，特别专注于IaaS和容器技术。而近十年的云计算工作经验，也让他对Linux的系统原理、常见的性能问题以及优化方式了如指掌。
+
+			上海 浦东新区
+
+			feisky.xyz
+			微信公众号: 漫谈云原生
+			weibo: weibo.com/fesky
+			twitter: https://twitter.com/feisky
+
+
+
+
+xiazhang@microsoft.com
+Andy Zhang 微软资深软件工程师 上海松江区
+andyzhangx
+	Work at Microsoft on @kubernetes. Focus on Volume, Windows on @Azure
+	member & approver in kubernetes upstream repository, OWNER of Azure Component.
+
+	working language:
+	Go, C++, C#, PowerShell, python, linux shell, etc.
+
+	working os:
+	Linux(CentOS, Redhat, Ubuntu, etc.)
+
+
+
+
+AXuelianWu@gmail.com
+吴雪莲 Shirly 杭州
+AndreMouche
+目前主要负责 TiDB/TiKV 事务、TiKV 计算层 Coprocessor 相关研发。
+曾就职于盛大创新院、京东云、网易杭州研究院，从事公有云 对象 存储系统的研发和设计。
+
+
+
+tabalt
+	Server Engineer (Java/Golang/LNMP) 新浪云高级开发者
+	Alibaba Cloud
+	Beijing
+	http://tabalt.net/
+	数字公司 (2014 - 至今)
+	地区：北京 ，朝阳区
+	新浪网技术（中国）有限公司 (2012 - 2014)
+	地区：北京 ，东城区
+	职位：安全开发工程师
+	新叶网络 (2010 - 2012)
+	地区：湖南 ，常德
+	职位：创始人之一，技术负责人
+
+
+
+shenyi.914@gmail.com
+沈毅Yi Shen 百度上海 PPMC of Apache ECharts (incubator)
+pissang
+WebGL / Front End / Data Visualization / Generative Art Fan / ZJUer
+
+				https://twitter.com/pissang1
+				https://weibo.com/pissang
+
+
+
+			xiemengjun@gmail.com
+			weibo.com/kaibao001
+
+			astaxie
+			Gopher
+
+			 	jimengIO  Shanghai, China
+			 	http://beego.me
+
+
+
+
+
 mail:i@zihua.li
-微信：zihuanote 
+微信：zihuanote
 weibo.com/luinlee
 twitter.com/luinlee
-
-Zihua Li
+Zihua Li子骅
 luin
 Web developer and designer
-	
+
 	slab 天津
 
 	http://zihua.li
@@ -220,27 +496,24 @@ Web developer and designer
 
 
 
-7
-xiazhang@microsoft.com
-
-Andy Zhang
-andyzhangx
-Work at Microsoft on @kubernetes. Focus on Storage(Volume), Windows on @Azure slack: andyzhang @kubernetes
-	上海
-	mail:xiazhang@microsoft.com
 
 
 
-8
+
+
+
+
+
+
 
 eliyar917@gmail.com
 https://weibo.com/536445669
 
-Eliyar Eziz艾力亚尔 
+Eliyar Eziz艾力亚尔
 BrikerMan
 AI Specialist, Google ML GDE. Love NLP, Love Python.
 
-	Yodo1游道易 Beijing  
+	Yodo1游道易 Beijing
 	https://eliyar.biz
 
 	91年、新疆人、维吾尔、开发者、Google Developers Experts、北京、iOS、Swift、python、Docker、机器学习、自然语言处理、推荐系统、开源、全栈、美剧、电影、摩托车、游泳、科技迷、公益。
@@ -249,42 +522,11 @@ AI Specialist, Google ML GDE. Love NLP, Love Python.
 
 
 
-9
-
 coocood@gmail.com
 
 Evan Zhou
 coocood
 Go,Java,Distributed System
-
-
-
-
-
-10
-
-xiemengjun@gmail.com 
-weibo.com/kaibao001
-
-astaxie
-Gopher
-
- 	jimengIO  Shanghai, China  	
- 	http://beego.me
-
-
-
-feiskyer 倪朋飞
-工作在云计算领域，Kubernetes项目维护者。在云计算、SDN网络和容器编排调度等领域具有多年实践经验。
-
-	微软Azure资深工程师，同时也是Kubernetes项目维护者，主要负责开源容器编排	系统Kubernetes在Azure的落地实践。他曾任职于盛大云和腾讯，一直从事云计算领域，特别专注于IaaS和容器技术。而近十年的云计算工作经验，也让他对Linux的系统原理、常见的性能问题以及优化方式了如指掌。
-
-	上海 浦东新区
-
-	feisky.xyz
-	微信公众号: 漫谈云原生
-	weibo: weibo.com/fesky
-	twitter: https://twitter.com/feisky
 
 
 
@@ -298,66 +540,6 @@ At work, I have been working on browser engines for more than 9 years, mainly in
 
 
 
-shenyi.914@gmail.com 
-https://twitter.com/pissang1
-https://weibo.com/pissang
-
-沈毅Yi Shen
-pissang
-WebGL / Front End / Data Visualization / Generative Art Fan / ZJUer
-
-	Baidu, Inc.
- 	Shanghai, China 
- 	shenyi.914@gmail.com 
- 	https://twitter.com/pissang1
-
-
-
-
-Hunag Hua Chao
-huachaohuang
-
-	mail:huachao.huang@gmail.com
-	huachaohuang.com
-
-	I am an experienced software engineer with a passionate interest in infrastructure software.
-
-	I have more than five years of experience in distributed storage systems. I have a solid understanding of storage engine, consensus algorithm, distributed transaction, and other database techniques.
-
-	Experience
-	ByteDance
-	2020 - Present
-
-	PingCAP
-	Tech Lead
-
-	2018 - 2019
-
-	Part of the TiKV team, managed a group of developers focused on storage engine, distributed computation and scheduling.
-
-	Responsible for technical research and development, growing the team and developing individual engineers within the team.
-
-	Infrastructure Engineer
-
-	2016 - 2017
-
-	Part of the TiKV team, led the development of PD.
-
-	PD is one of the components for TiDB. It is responsible for timestamp allocation, metadata management, and distributed scheduling.
-
-	Nice
-	Senior Software Engineer
-
-	2015 - 2016
-
-	Led the development of NDB, a persistent key-value storage system compatible with Redis protocol. I designed and implemented NDB from scratch, and was responsible for all the development and operation.
-
-	Tencent
-	Software Engineer
-
-	2013 - 2015
-
-	Part of the infrastructure team in Wechat. Invoked in the development of a NoSQL storage system, the predecessor of PaxosStore.
 
 
 
@@ -411,8 +593,8 @@ deprecated
 		Haidian Dist, Beijing, China, 100093
 		Phone: (+86-010) 5874-8169
 
-			
-		Baohua Yang is currently the principal architect of Oracle's 
+
+		Baohua Yang is currently the principal architect of Oracle's
 
 
 		Blockchain product, leading the research and development of Blockchain service and product. Before that, he has been working on advanced technical topics of networking and distributed system (e.g., blockchain, cloud computing and data analytics) in IBM Research. His interests include Distributed System and Data Science, especially on emerging technologies such as Blockchain, BigData, Cloud and Machine Learning.
@@ -514,5 +696,3 @@ SunriseFox —— 前端全栈方向
 	工作经历
 	2019.07 - 2020.02, working for Sujitech’s team Dimension-Dev, a member of tc39, devoting myself to the frontend team (React, TypeScript, browser and native extensions), decentralized database, crypto and privacy protection. Mainly contributed to Maskbook, an open-source browser plugin, for new features, performance improvements and bug fixes.
 	2018 A 公司前端（全栈）工程师，使用 Vue、Postgres 与 NodeJS，完成微信小程序及移动端单页 H5 应用完成开发、适配到上线的完整流程。
-
-

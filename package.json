@@ -1,10 +1,10 @@
-
 {
   "name": "hello-world",
   "description": "my express serer",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "bluebird": "^3.7.2",
     "express": "3.x"
   }
 }

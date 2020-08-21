@@ -1,6 +1,6 @@
 {
-  "name": "hello-world",
-  "description": "my express serer",
+  "name": "nodejs-lab",
+  "description": "",
   "version": "0.0.1",
   "private": true,
   "dependencies": {

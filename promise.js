@@ -73,6 +73,8 @@ Promise.prototype.catch = function(catchHandler){
 	this.catchHandler = catchHandler;
 }
 
+
+
 Promise.promisify = function(func){
 	return function(...args){
 		return new Promise(function(succ,fail){
@@ -85,6 +87,8 @@ Promise.promisify = function(func){
 		});
 	}
 }
+
+
 
 
 module.exports = Promise

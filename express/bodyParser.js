@@ -1,51 +1,53 @@
-var path = require("path");
-var fs = require("fs");
+const path = require("path");
+const fs = require("fs");
+const querystring = require('querystring');
 
+module.exports = function() {
 
-module.exports = function(type) {
+    function parseBody(req, res, next) {
 
-    function central(req, res, next) {
+        const ct = req.headers["content-type"] || '';
 
-        var ct = req.headers["content-type"]
-        if (ct.indexOf("multipart/form-data") != -1)
-            multipart(req, res, next)
+        if (ct.includes("multipart/form-data"))
+            multipart(req, res, next);
         else {
-            req.body = {}
-            var body = [];
+            req.body = {};
+            let body = [];
             req.on("data", function(data) {
-                body.push(data)
+                body.push(data);
             })
 
             req.on("end", function() {
-                var str = Buffer.concat(body).toString();
+                const bodyStr = Buffer.concat(body).toString();
 
-                var reg = /([^;&\s]+)=([^;&\s]+)/g
-                str.replace(reg, function(a, b, c) {
-                    req.body[b] = c
-                })
+                if (ct.includes("application/json")) {
+                    req.body = JSON.parse(bodyStr);
+                } else if (ct.includes("application/x-www-form-urlencoded")) {
+                    req.body = querystring.parse(bodyStr);
+                }
 
-                next()
+                next();
             })
         }
     }
 
     function multipart(req, res, next) {
 
-        var boundary = "--" + /boundary=(.+)/g.exec(req.headers["content-type"])[1]
+        let boundary = "--" + /boundary=(.+)/g.exec(req.headers["content-type"])[1]
 
-        var bdlen = Buffer.byteLength(boundary)
-        var buf;
-        var cc;
+        let bdlen = Buffer.byteLength(boundary)
+        let buf;
+        let cc;
         req.body = { fields: [], files: [] };
 
         function parseContent() {
-            var chi = buf.indexOf("\r\n\r\n")
+            let chi = buf.indexOf("\r\n\r\n")
 
             if (chi != -1) {
-                var ch = buf.toString('utf8', 0, chi);
+                let ch = buf.toString('utf8', 0, chi);
                 console.log("parseContent " + ch)
 
-                var reg = /\s\n([^:;]+):\s([^:;]+)/g
+                let reg = /\s\n([^:;]+):\s([^:;]+)/g
                 cc = {};
 
                 ch.replace(reg, function(a, b, c) {
@@ -66,10 +68,10 @@ module.exports = function(type) {
 
         function setValue(e) {
             if (cc.filename) {
-            	var end = e - 2 || buf.length - bdlen
+            	let end = e - 2 || buf.length - bdlen
                 req.pause();
-                var content = buf.slice(0, end)
-                var fullname = path.join(__dirname, cc.filename);
+                let content = buf.slice(0, end)
+                let fullname = path.join(__dirname, cc.filename);
                 fs.appendFile(fullname, content, function(res) {
                     req.resume()
                 })
@@ -95,7 +97,7 @@ module.exports = function(type) {
             if (buf.length < bdlen + 5 && buf.indexOf(boundary + "--") != -1)
                 return;
 
-            var index = buf.indexOf(boundary)
+            let index = buf.indexOf(boundary)
 
             if (index == 0) {
                 parseContent();
@@ -115,36 +117,6 @@ module.exports = function(type) {
         })
     }
 
-    return central;
+    return parseBody;
 
-
-        /*function parseValue(index, nextbound) {
-
-            cc.value = buf.toString('utf8', index, nextbound - 2) // minus /r/n
-            req.body.fields.push(cc)
-            console.log("parseValue", cc.value)
-            cc = null
-            buf = buf.slice(nextbound)
-            //remainBt = 0
-            parseBuffer()
-        }
-
-        function appendFile(start, end) {
-            var e = end - 2 || buf.length - start - bdlen;
-            req.pause();
-            var filedata = buf.slice(start, e)
-            fs.appendFile(path.join(__dirname, cc.filename), filedata, function(res) {
-                req.resume()
-            })
-
-            buf = buf.slice(start + (end || e))
-
-            if (end) {
-                cc.value = path.join(__dirname, cc.filename)
-                req.body.files.push(cc)
-                cc = null
-                parseBuffer()
-            }
-            //remainBt = bdlen
-        }*/
 }

@@ -4,7 +4,7 @@ function urlParser(req) {
     var reg = /([^?]+)?/;
     req.path = url.match(reg)[0];
 
-    reg = /([^?&]+)=([^&]+)/g;
+    reg = /([^?&]+)=([^&]+  )/g;
 
     req.query = {};
     req.params = [];

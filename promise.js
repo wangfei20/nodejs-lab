@@ -1,94 +1,188 @@
+class FPromise {
+	constructor(fun) {
+		this.fun = fun;
+		this.sets = new Array();
+		this.index = 0;
+	}
+	static promisify(func) {
+		return function (...args) {
+			return new FPromise(function (succ, fail) {
+				func(...args, function (err, data) {
+					if (!err)
+						succ(data);
 
-function Promise(fun){
-	this.fun = fun;
-	this.sets = new Array();
-	this.index = 0;
-}
-
-Promise.prototype.then = function(succ,fail){
-
-	if(!succ && !fail)
-		throw new Error("there has to be at least one handler!")
-
-	var self = this;
-
-	const then = function(data,func){
-		var p = func(data)
-		var set = self.sets.shift()
-
-		if(p){
-			try{
-				p.fun(set.success,set.failure)
-			}
-			catch(e){
-				if(self.catchHandler)self.catchHandler(e)
-			}
-		} else if(set) {
-			try{
-				if(set.success)
-					set.success()
-				else if (set.failure)
-					set.failure()
-			}
-			catch(e){
-				if(self.catchHandler)self.catchHandler(e)
-			}
+					else
+						fail(err);
+				});
+			});
 		};
 	}
+	then(succ, fail) {
 
-	const success = function(result){
-		if(succ)
-			then(result,succ)
+
+		if (!succ && !fail)
+			throw new Error("there has to be at least one handler!");
+
+		var self = this;
+
+		function getSuccessHandler(handler) {
+			return function (result) {
+				if (handler)
+					then(result, handler);
+			};
+		}
+
+		function getFailureHandler(handler) {
+			return function (err) {
+				if (handler)
+					then(err, handler);
+				else if (self.catchHandler)
+					self.catchHandler(err);
+			};
+		}
+
+
+		const then = function (data, func) {
+			var p = func(data);
+			var set = self.sets.shift();
+
+			let success = getSuccessHandler(set?.success);
+			let failure = getFailureHandler(set?.failure);
+
+			if (p instanceof FPromise) {
+				try {
+					p.fun(success, failure);
+				}
+				catch (e) {
+					if (self.catchHandler) self.catchHandler(e);
+				}
+			} else {
+				try {
+					success();
+				}
+				catch (e) {
+					if (self.catchHandler) self.catchHandler(e);
+				}
+			};
+		};
+
+
+		let success = getSuccessHandler(succ);
+		let failure = getFailureHandler(fail);
+
+		if (this.index == 0) {
+			this.index++;
+			process.nextTick(function () {
+				self.fun(success, failure);
+			});
+		}
+		else
+			this.sets.push({ success: succ, failure: fail });
+
+		return this;
 	}
-	const failure = function(err){
-		if(fail)
-			then(err,fail)
-		else if(self.catchHandler)
-			self.catchHandler(err)
+	catch(catchHandler) {
+		this.catchHandler = catchHandler;
 	}
-
-	/*var success = function(result){
-		var p = succ(result)
-		p ? p.fun(set.success,set.failure) :  null;
-	}
-	var failure = function(err){
-		var p = fail(err)
-		var set = self.sets.shift()
-		p ? p.fun(set.success,set.failure) :  null;
-	}*/
-
-
-	if(this.index == 0){
-		this.index++;
-		process.nextTick(function(){
-			self.fun(success,failure)
-		})
-	} else
-		this.sets.push({success,failure})
-
-	return this;
 }
 
-Promise.prototype.catch = function(catchHandler){
-	this.catchHandler = catchHandler;
-}
-
-
-
-Promise.promisify = function(func){
-	return function(...args){
-		return new Promise(function(succ,fail){
-			func(...args,function(err,data){
-				if(!err)
-					succ(data)
-				else
-					fail(err)
-			})
-		});
-	}
-}
 
 
 
 
-module.exports = Promise
+
+
+module.exports = FPromise
+
+
+// function FPromise(fun){
+// 	this.fun = fun;
+// 	this.sets = new Array();
+// 	this.index = 0;
+// }
+
+// FPromise.prototype.then = function(succ,fail) {
+	
+
+// 	if(!succ && !fail)
+// 		throw new Error("there has to be at least one handler!")
+
+// 	var self = this;
+
+// 	function getSuccessHandler(handler){
+// 		return function(result){
+// 			if(handler)
+// 				then(result,handler)
+// 		}
+// 	}
+
+// 	function getFailureHandler(handler){
+// 		return function(err){
+// 			if(handler)
+// 				then(err,handler)
+// 			else if(self.catchHandler)
+// 				self.catchHandler(err)
+// 		}
+// 	}
+
+
+// 	const then = function(data,func){
+// 		var p = func(data)
+// 		var set = self.sets.shift()
+
+// 		let success = getSuccessHandler(set?.success)
+// 		let failure = getFailureHandler(set?.failure)
+		
+// 		if(p instanceof FPromise){
+// 			try{
+// 				p.fun(success,failure)
+// 			}
+// 			catch(e){
+// 				if(self.catchHandler) self.catchHandler(e)
+// 			}
+// 		} else {
+// 			try{
+// 				success()
+// 			}
+// 			catch(e){
+// 				if(self.catchHandler) self.catchHandler(e)
+// 			}
+// 		};
+// 	}
+
+
+// 	let success = getSuccessHandler(succ)
+// 	let failure = getFailureHandler(fail)
+
+// 	if(this.index == 0){
+// 		this.index++;
+// 		process.nextTick(function(){
+// 			self.fun(success,failure)
+// 		})
+// 	} else
+// 		this.sets.push({success:succ,failure:fail})
+
+// 	return this;
+// }
+
+// FPromise.prototype.catch = function(catchHandler){
+// 	this.catchHandler = catchHandler;
+// }
+
+
+
+// FPromise.promisify = function(func){
+// 	return function(...args){
+// 		return new FPromise(function(succ,fail){
+// 			func(...args,function(err,data){
+// 				if(!err)
+// 					succ(data)
+// 				else
+// 					fail(err)
+// 			})
+// 		});
+// 	}
+// }
+
+
+// module.exports = FPromise

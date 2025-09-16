@@ -23,7 +23,7 @@ class FPromise {
 		if (!succ && !fail)
 			throw new Error("there has to be at least one handler!");
 
-		var self = this;
+		let self = this;
 
 		function getSuccessHandler(handler) {
 			return function (result) {
@@ -43,8 +43,8 @@ class FPromise {
 
 
 		const then = function (data, func) {
-			var p = func(data);
-			var set = self.sets.shift();
+			let p = func(data);
+			let set = self.sets.shift();
 
 			let success = getSuccessHandler(set?.success);
 			let failure = getFailureHandler(set?.failure);
@@ -107,7 +107,7 @@ module.exports = FPromise
 // 	if(!succ && !fail)
 // 		throw new Error("there has to be at least one handler!")
 
-// 	var self = this;
+// 	let self = this;
 
 // 	function getSuccessHandler(handler){
 // 		return function(result){
@@ -127,8 +127,8 @@ module.exports = FPromise
 
 
 // 	const then = function(data,func){
-// 		var p = func(data)
-// 		var set = self.sets.shift()
+// 		let p = func(data)
+// 		let set = self.sets.shift()
 
 // 		let success = getSuccessHandler(set?.success)
 // 		let failure = getFailureHandler(set?.failure)
@@ -186,3 +186,4 @@ module.exports = FPromise
 
 
 // module.exports = FPromise
+
